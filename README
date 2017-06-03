@@ -5,3 +5,12 @@ Dr. Odd http://www.drodd.com/
 
 If you know of a goat whose name isn't in the list please do a pull request
 so we can ensure the list is complete.
+
+
+Runnin it:
+
+make a volume so data persists if the script crashes:
+$ docker volume create --name="goatnames-data"
+
+run that motherbleater:
+$ docker run -d -v goatnames-data:/data goatnames

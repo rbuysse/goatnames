@@ -6,7 +6,7 @@ RUN apk update && \
 	git && \
 	pip install tweepy
 
-RUN git clone https://github.com/rbuysse/twitterbot.git
+RUN git clone -b docker-data-dir https://github.com/rbuysse/twitterbot.git
 
 WORKDIR twitterbot
 
